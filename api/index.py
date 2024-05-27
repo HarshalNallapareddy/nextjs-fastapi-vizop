@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from api.private import get_options_chain, options_algo
 
 app = FastAPI()
@@ -16,3 +16,11 @@ def get_expirations():
     # data = request.json
     # ticker = data['ticker']
     return get_options_chain.get_expirations('AAPL')
+
+@app.get('/api/get_strikes')
+async def get_strikes(request: Request):
+    data = await request.json()
+    print(data)
+    ticker = data['ticker']
+    expiration = data['expiration']
+    return get_options_chain.get_strikes(ticker, expiration)
