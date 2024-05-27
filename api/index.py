@@ -11,7 +11,7 @@ def hello_world():
 def test():
     return {"message": "Test"}
 
-@app.post('/api/get_expirations')
+@app.get('/api/get_expirations')
 def get_expirations():
     # data = request.json
     # ticker = data['ticker']
