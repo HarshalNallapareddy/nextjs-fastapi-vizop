@@ -10,3 +10,9 @@ def hello_world():
 @app.get("/api/test")
 def test():
     return {"message": "Test"}
+
+@app.post('/api/get_expirations')
+def get_expirations():
+    # data = request.json
+    # ticker = data['ticker']
+    return get_options_chain.get_expirations('AAPL')
