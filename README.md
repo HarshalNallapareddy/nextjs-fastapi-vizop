@@ -21,7 +21,7 @@ This is implemented using [`next.config.js` rewrites](https://github.com/digitro
 
 On localhost, the rewrite will be made to the `127.0.0.1:8000` port, which is where the FastAPI server is running.
 
-In production, the FastAPI server is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
+In production, the FastAPI server is hosted as [Python serverless functions](https://vercel.com//concepts/functions/serverless-functions/runtimes/python) on Vercel.
 
 ## Demo
 
@@ -71,7 +71,7 @@ The FastApi server will be running on [http://127.0.0.1:8000](http://127.0.0.1:8
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [FastAPI Documentation](https://fastapi.tiangolo.com/) - learn about FastAPI features and API.
 
