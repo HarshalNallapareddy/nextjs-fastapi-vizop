@@ -4,7 +4,6 @@ import { useState } from 'react';
 import LeftSidebar from '../components/LeftSidebar';
 import RightSidebar from '../components/RightSidebar';
 import SampleGraph from '../components/SampleGraph';
-import '../styles/index.css';
 import RootLayout from './layout'; // Import RootLayout
 
 export default function Home() {
